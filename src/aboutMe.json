@@ -1,0 +1,9 @@
+{
+    "welcome": {
+        "presentation": "I am Junior Full Stack Developer from Russia living in Israel."
+    },
+    "projects": {
+        "CRM": "A MERN stack based Customer Relationship Management tool. Used Recharts for graphic analytics dashboard and Material UI for design.",
+        "RESCYOUME": "RescYouMe is an application created for you to feel safer wherever you go. Built using Google Maps API, Web-push npm package, MERN, Material UI, MobX."
+    }
+}

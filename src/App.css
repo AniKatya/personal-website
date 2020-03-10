@@ -1,22 +1,153 @@
-.App {
-  text-align: center;
+*{
+  font-family: 'Montserrat';
 }
 
-.App-logo {
-  height: 40vmin;
+body{
+  overflow: hidden;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.left-side{
+  height: 100vh;
+  font-size: 80px;
+  padding-left: 60px;
+  font-weight: bold;
+  position: relative;
 }
 
-.App-link {
-  color: #09d3ac;
+.right-side{
+  background-color: white;
+  height: 100vh;
+  overflow: scroll;
+  font-size: 20px;
+  position: relative;
 }
+
+.content {
+  padding: 60px 100px 100px 100px;
+  line-height:2.0;
+  font-weight: bold;
+  animation-name: appearSlowly;
+  animation-duration: 3s;
+}
+
+
+.pic{
+  width: 280px;
+  height: 290px;
+  border-radius: 50%;
+  border: 5px solid white;
+  margin-left: calc(50% - 147.5px);
+  filter: grayscale(100%); 
+}
+
+.pic:hover{
+  filter: none; 
+}
+
+.header{
+  padding-top: 40px;
+  animation-name: moveToRight;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in;
+}
+
+@keyframes moveToRight{
+  0%{
+    opacity: 0;
+    transform: translateX(-100px)
+  }
+
+  80%{
+    transform:translateX(10px)
+  }
+
+  100%{
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes moveToLeft{
+  0%{
+    opacity: 0;
+    transform: translateX(100px)
+  }
+
+  80%{
+    transform:translateX(-10px)
+  }
+
+  100%{
+    opacity: 1;
+    transform: translate(0);
+  }
+}
+
+@keyframes appearSlowly{
+  0%{
+    opacity:0;
+  }
+  100%{
+    opacity:1;
+  }
+}
+
+@keyframes appearFromBottom{
+  0%{
+    transform:translateY(30px);
+  }
+  100%{
+    transform:translateY(0px);
+  }
+}
+
+.icons-container{
+  margin-right:20px;
+  bottom: 30px;
+  position: absolute;
+}
+
+.icons{
+  font-size:50px !important;
+  animation-name: appearFromBottom;
+  animation-duration: 1.5s;
+}
+
+.icons:hover{
+  transform: scale(1.2)
+}
+.icons:active{
+  transform: scale(1)
+}
+
+#linkedin{
+  color: #2867B2;
+}
+
+#github{
+  color:black;
+}
+
+#mail{
+  color: #D44638;
+}
+
+#codewars{
+  color:black;
+}
+
+.labels{
+  font-weight:bold;
+  font-size: 20px;
+}
+
+.toolbar-container{
+  position: relative;
+  align-content: center;
+  position: absolute;
+  bottom: 20px;
+  animation-name: moveToLeft;
+  animation-duration: 1.5s;
+  animation-timing-function: ease-in;
+}
+
