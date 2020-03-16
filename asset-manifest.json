@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/personal-website/static/css/main.b7ea2a98.chunk.css",
+    "main.js": "/personal-website/static/js/main.be258332.chunk.js",
+    "main.js.map": "/personal-website/static/js/main.be258332.chunk.js.map",
+    "runtime-main.js": "/personal-website/static/js/runtime-main.172af483.js",
+    "runtime-main.js.map": "/personal-website/static/js/runtime-main.172af483.js.map",
+    "static/js/2.59db71f0.chunk.js": "/personal-website/static/js/2.59db71f0.chunk.js",
+    "static/js/2.59db71f0.chunk.js.map": "/personal-website/static/js/2.59db71f0.chunk.js.map",
+    "index.html": "/personal-website/index.html",
+    "precache-manifest.cbb211e23223dd0a8d84bc380ab5f69f.js": "/personal-website/precache-manifest.cbb211e23223dd0a8d84bc380ab5f69f.js",
+    "service-worker.js": "/personal-website/service-worker.js",
+    "static/css/main.b7ea2a98.chunk.css.map": "/personal-website/static/css/main.b7ea2a98.chunk.css.map",
+    "static/media/crm1.png": "/personal-website/static/media/crm1.fee5c4ee.png",
+    "static/media/crm2.png": "/personal-website/static/media/crm2.159bbdaa.png",
+    "static/media/crm3.png": "/personal-website/static/media/crm3.1f364136.png",
+    "static/media/me.jpg": "/personal-website/static/media/me.26953e4f.jpg",
+    "static/media/resc1.png": "/personal-website/static/media/resc1.4c756f19.png",
+    "static/media/resc2.png": "/personal-website/static/media/resc2.f43d5089.png",
+    "static/media/resc3.png": "/personal-website/static/media/resc3.1843413c.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.172af483.js",
+    "static/js/2.59db71f0.chunk.js",
+    "static/css/main.b7ea2a98.chunk.css",
+    "static/js/main.be258332.chunk.js"
+  ]
+}
