@@ -18,14 +18,18 @@ class RightSide extends Component {
                     <div>{json.welcome.welcomeParagraph1}</div>
                     <br></br>
                     <div>{json.welcome.welcomeParagraph2}</div>
-                    <h4>{this.props.data.fullName}</h4>
                     <h1><i>Technologies I use</i></h1>
                     {json.welcome.technologies.map(tech=><div className="tech-tag">{tech}</div>)}
                     </>
                     : null}
                     {this.props.data.name === "projects" ? <Projects />: null}
                     <br></br> <br></br>
-                    {this.props.data.name === "contact" ? <Icons /> : null}
+                    {this.props.data.name === "contact" ?
+                    <>
+                    <h4>{this.props.data.fullName}</h4>
+                    <h4>{this.props.data.location}</h4>
+                    <Icons /> 
+                    </>: null}
                 </div>
             </div>)
 
