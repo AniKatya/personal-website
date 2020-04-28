@@ -8,6 +8,9 @@ import crm3 from '../crm3.png'
 import resc1 from '../resc1.png'
 import resc2 from '../resc2.png'
 import resc3 from '../resc3.png'
+import weather1 from '../weather1.png'
+import weather2 from '../weather2.png'
+
 import '../App.css'
 let json = require('../aboutMe.json')
 
@@ -17,7 +20,8 @@ class Projects extends Component {
         super();
         this.state = {
             CRM: false,
-            RESCYOUME: false
+            RESCYOUME: false,
+            WeatherNow: false
         }
     }
     addCrmInfoDiv = () => {
@@ -28,6 +32,11 @@ class Projects extends Component {
     addRescInfoDiv = () => {
         this.setState({
             RESCYOUME: !this.state.RESCYOUME
+        })
+    }
+    addWeatherInfoDiv =() => {
+        this.setState({
+            WeatherNow: !this.state.WeatherNow
         })
     }
     render() {
@@ -50,6 +59,14 @@ class Projects extends Component {
                         <img className="projects-screenshots-rescyoume" src={resc1} alt=""></img>
                         <img className="projects-screenshots-rescyoume" src={resc2} alt=""></img>
                         <img className="projects-screenshots-rescyoume" src={resc3} alt=""></img>
+                    </div>
+                </a>
+                <Button style={{ width: '100%', color: 'white' }} className="project-title weather-title" onClick={this.addWeatherInfoDiv} endIcon={<ArrowDropDownIcon> </ArrowDropDownIcon>}>WeatherNow</Button>
+                {this.state.WeatherNow ? <div className="project-info">{json.projects.WeatherNow}</div> : null}
+                <a href="https://my-weather-now-app.herokuapp.com/">
+                    <div className="rescyoume-screenshots-container">
+                        <img className="projects-screenshots-rescyoume" src={weather1} alt=""></img>
+                        <img className="projects-screenshots-rescyoume" src={weather2} alt=""></img>
                     </div>
                 </a>
 
