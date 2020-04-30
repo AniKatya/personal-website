@@ -7,10 +7,11 @@ import Grid from '@material-ui/core/Grid';
 
 
 
-class Icons extends Component {
+class Contact extends Component {
   
     render() {
         return (
+            <div>
             <Grid className="icons-container" container>
                 <Grid item xs={2}>
                     <a target="_blank" href="https://www.linkedin.com/in/katyalopukhina">
@@ -38,7 +39,8 @@ class Icons extends Component {
                 </Grid>
                 
             </Grid>
+            </div>
         )
     }
 }
-export default Icons;
+export default Contact;

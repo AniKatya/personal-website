@@ -8,12 +8,14 @@
     display: grid;
     grid-template-columns: 50% 50%;
   }
-  body{overflow: hidden;}
+  /* body{overflow: hidden;} */
   .right-side {
     height: 100vh;
     overflow: scroll;
   }
-  .left-side {font-size:3rem;}  
+  .left-side {
+    font-size:3rem;
+  }  
   .projects-screenshots-rescyoume {
     margin: 0 -5rem 0 -5rem;
   }
@@ -65,14 +67,20 @@
 
 
 
-.left-side{
+.left-side {
   padding-left: 10%;
   padding-right: 10%;
   font-weight: bold;
   height: 100vh;
-  position: relative;
+  /* position: relative; */
 }
-
+/*New*/
+.left-side#main {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
+/**/
 .right-side{
   background-color: white;
   position: relative;

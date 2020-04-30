@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import pic from './me.jpg'
-import LeftSide from './components/LeftSide.js';
-import RightSide from './components/RightSide.js';
+import LeftSide from './components/LeftSideComp/LeftSide.js';
+import RightSide from './components/RightSideComp/RightSide.js';
 let json = require('./aboutMe.json');
 
 
@@ -12,7 +12,7 @@ class App extends Component {
     this.state = {
       blocks: [
         {
-          name: "welcome", header: 'Shalom!_I am Katya.', 
+          name: "main", header: 'Shalom!_I am Katya.', 
           backgroundColor: '#C9A3B4', color: "white", 
           pic: pic,
           paragraph1: json.welcome.presentation

@@ -4,7 +4,7 @@
         "welcomeParagraph1": "In code I love structure and order. I enjoy spending time on fixing small details in order to optimize web apps.",
         "welcomeParagraph2": "I am passionate about design and minimalism, because truly believe that all ingenious is simple.",
 
-        "technologies":["html5","css","javascript","jquery","react.js","mobx","express.js","node.js","sql","mongodb","git"]
+        "technologies":["html5","css","javascript","jquery","react.js","mobx","redux","git","express.js","node.js","sql","mongodb"]
     },
     "projects": {
         "presentation": "I've created several projects by myself and with my friends during Hackathons.",
