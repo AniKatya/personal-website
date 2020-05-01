@@ -6,6 +6,7 @@
   "dependencies": {
     "@material-ui/core": "^4.6.1",
     "@material-ui/icons": "^4.5.1",
+    "node-sass": "^4.14.0",
     "react": "^16.11.0",
     "react-dom": "^16.11.0",
     "react-on-screen": "^2.1.1",
@@ -42,6 +43,7 @@
     ]
   },
   "devDependencies": {
+    "css-loader": "^3.5.3",
     "gh-pages": "^2.2.0"
   }
 }

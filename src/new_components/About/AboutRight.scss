@@ -1,0 +1,38 @@
+.paragraph {
+  margin-bottom: 3rem;
+}
+
+.pic {
+  border-radius: 50%;
+  border: 0.3rem solid white;
+  display: block;
+  margin: auto;
+  filter: grayscale(100%);
+  width: 60%;
+  height: auto;
+}
+
+.pic:hover {
+  filter: none;
+}
+
+.tech-tag {
+  display: inline-block;
+  margin: 5px;
+  border: 1px solid;
+  margin-right: 10px;
+  margin-bottom: 12px;
+  border-radius: 3em;
+  padding: 6px 15px;
+}
+
+// @media only screen and (min-width: 768px){
+//   .main-container {
+//       display: flex;
+
+//       .left-side,
+//       .main-right {
+//           width: 50%;
+//       }
+//   }
+// }

@@ -2,20 +2,40 @@
   font-family: 'Montserrat';
   font-size: 100%;
 }
+.main-container {
+  display: flex;
+}
+
+.left-side, .right-side {
+  width: 50%;
+}
+
+/*leftSide*/
+.header {
+  justify-content: center;
+  align-items: center;
+  padding-left: 10%;
+  padding-right: 10%;
+  font-weight: bold;
+}
+/**/
+
+div.sticky {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
 
 @media (min-width: 600px) {
-  .page-grid {
-    display: grid;
-    grid-template-columns: 50% 50%;
-  }
-  /* body{overflow: hidden;} */
-  .right-side {
-    height: 100vh;
-    overflow: scroll;
-  }
-  .left-side {
-    font-size:3rem;
-  }  
+  .main-container {
+    display: flex;
+
+    .left-side,
+    .right-side {
+        width: 50%;
+    }
+}
+
   .projects-screenshots-rescyoume {
     margin: 0 -5rem 0 -5rem;
   }
@@ -68,21 +88,21 @@
 
 
 .left-side {
-  padding-left: 10%;
-  padding-right: 10%;
-  font-weight: bold;
+  // padding-left: 10%;
+  // padding-right: 10%;
+  // font-weight: bold;
+  font-size:3rem;
   height: 100vh;
   /* position: relative; */
 }
 /*New*/
-.left-side#main {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-}
+// .left-side#main {
+//   position: -webkit-sticky;
+//   position: sticky;
+//   top: 0;
+// }
 /**/
 .right-side{
-  background-color: white;
   position: relative;
 }
 
@@ -96,19 +116,7 @@
 }
 
 
-.pic{
-  border-radius: 50%;
-  border: 0.3rem solid white;
-  display: block;
-  margin: auto;
-  filter: grayscale(100%); 
-  width: 60%;
-  height: auto;
-}
 
-.pic:hover{
-  filter: none; 
-}
 
 .header{
   animation-name: moveToRight;
@@ -202,7 +210,7 @@
 }
 
 .labels{
-  font-weight:bold;
+  font-weight: bold;
 }
 
 .toolbar-container{
@@ -210,6 +218,7 @@
   align-content: center;
   position: absolute;
   bottom: 20px;
+  padding-left: 9%;
   animation-name: moveToLeft;
   animation-duration: 1.5s;
   animation-timing-function: ease-in;
@@ -231,46 +240,5 @@
 /*ensure that your images will never be bigger than their parent container*/
 img { max-width: 100%; height: auto; }
 
-.tech-tag{
-  display: inline-block;
-  margin: 5px;
-  border: 1px solid;
-  margin-right: 10px;
-  margin-bottom: 12px;
-  border-radius: 3em;
-  padding: 6px 15px;
-}
 
-.projects-screenshots{
-  width: 100%;
-  height: auto
-}
 
-.project-title{
-  margin: auto;
-  text-align: center;
-  text-decoration: none;
-  color: white;
-}
-
-.project-title:active{
-  color: lightgrey;
-}
-
-.project-title{
-  background-color: rgba(211, 211, 211, 40%)!important;
-  color: white;
-  border-radius: 15px;
-  padding: 5%;
-}
-
-.project-info {
-  color: white;
-  padding: 5%;
-  font-weight: normal;
-}
-
-.crm-screenshots-container{
-  margin-top: 40px;
-  margin-bottom:40px
-}
