@@ -2,10 +2,10 @@ import React, { Component } from "react";
 import "./App.scss";
 
 import pic from "./me.jpg";
-import AboutRight from "./new_components/About/AboutRight.js";
-import ProjectsRight from "./new_components/Projects/ProjectsRight.js";
-import ContactRight from "./new_components/Contact/ContactRight.js";
-import LeftSide from "./new_components/LeftSide/LeftSide.js";
+import AboutRight from "./components/About/AboutRight.js";
+import ProjectsRight from "./components/Projects/ProjectsRight.js";
+import ContactRight from "./components/Contact/ContactRight.js";
+import LeftSide from "./components/LeftSide/LeftSide.js";
 let json = require("./aboutMe.json");
 
 class App extends Component {

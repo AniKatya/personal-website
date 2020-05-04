@@ -5,13 +5,9 @@ import ArrowDropDownIcon from "@material-ui/icons/ArrowDropDown";
 import crm1 from "../../crm1.png";
 import crm2 from "../../crm2.png";
 import crm3 from "../../crm3.png";
-import resc1 from "../../resc1.png";
-import resc2 from "../../resc2.png";
-import resc3 from "../../resc3.png";
-import weather1 from "../../weather1.png";
-import weather2 from "../../weather2.png";
+import resc from "../../resc.png";
+import Weather from "../../Weather.png";
 
-// import "../../App.scss";
 import "./ProjectsRight.scss"
 let json = require("../../aboutMe.json");
 
@@ -35,10 +31,7 @@ class Projects extends Component {
               <div className="project-info">{json.projects.WeatherNow}</div>
             ) : null}
             <a href="https://my-weather-now-app.herokuapp.com/">
-              <div className="rescyoume-screenshots-container">
-                <img className="projects-screenshots-crm" src={weather1} alt=""></img>
-                <img className="projects-screenshots-crm" src={weather2} alt=""></img>
-              </div>
+                <img className="projects-screenshots-weather" src={Weather} alt=""></img>
             </a>
 
             <Button
@@ -68,11 +61,7 @@ class Projects extends Component {
               <div className="project-info">{json.projects.RESCYOUME}</div>
             ) : null}
             <a href="https://resc-you-me.herokuapp.com/">
-              <div className="rescyoume-screenshots-container">
-                <img className="projects-screenshots-rescyoume" src={resc1} alt=""></img>
-                <img className="projects-screenshots-rescyoume" src={resc2} alt=""></img>
-                <img className="projects-screenshots-rescyoume" src={resc3} alt=""></img>
-              </div>
+                <img className="projects-screenshots-rescyoume" src={resc} alt=""></img>
             </a>
     
           </div>

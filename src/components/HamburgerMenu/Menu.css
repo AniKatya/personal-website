@@ -1,0 +1,24 @@
+.mobile-menu-comp{
+    background-color: white;
+    height: 100vh;
+    width: 100%;
+    z-index: 1;
+    color: red;
+    position: fixed;
+    overflow: hidden;
+}
+
+.mobile-menu-labels-container {
+    padding-top: 50%;
+    padding-left: 30%;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+.mobile-menu-label{
+    text-align: center;
+    color:#C9A3B4;
+    font-weight: bold !important;
+    width: 100%;
+    font-size: 1.75rem;
+}

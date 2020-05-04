@@ -1,244 +1,249 @@
-*{
-  font-family: 'Montserrat';
-  font-size: 100%;
-}
-.main-container {
-  display: flex;
-}
-
-.left-side, .right-side {
-  width: 50%;
+* {
+  font-family: "Montserrat";
 }
 
 /*leftSide*/
 .header {
   justify-content: center;
   align-items: center;
-  padding-left: 10%;
   padding-right: 10%;
   font-weight: bold;
 }
 /**/
-
-div.sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+@media (min-width: 300px) {
+  .header {
+    font-size: 4rem;
+    padding-top: 30%;
+    padding-left: 15%;
+  }
+  .right-side {
+    min-height: 100vh;
+    z-index: 0;
+  }
+  .icons {
+    font-size: 1.5rem !important;
+  }
+  .left-side,
+  .right-side {
+    min-height: 100vh;
+    width: 100vw;
+  }
+  .toolbar-container {
+    font-size: 3rem !important;
+    padding-left: 15%;
+    position: absolute;
+    bottom: 30px;
+  }
 }
 
 @media (min-width: 600px) {
+  .header, .toolbar-container {
+    padding-left: 10%;
+  }
   .main-container {
     display: flex;
 
     .left-side,
     .right-side {
-        width: 50%;
+      width: 50%;
     }
-}
 
-  .projects-screenshots-rescyoume {
-    margin: 0 -5rem 0 -5rem;
+    div.sticky {
+      position: -webkit-sticky;
+      position: sticky;
+      top: 0;
+    }
   }
-  .rescyoume-screenshots-container {
-    display: flex;
-    justify-content:flex-start;
-  } 
-  .right-side, .labels, .project-title {font-size:1rem !important;} 
-  .icons {font-size:1.5rem !important;}
-}
+  .toolbar-container {
+    position: absolute;
+    bottom: 30px;
+  }
 
-@media (min-width: 300px) {
-  .header {
-    font-size:4rem;
-  }
-  .right-side {
-    min-height: 100vh;
+  .right-side,
+  .labels,
+  .project-title {
+    font-size: 1rem !important;
   }
   .icons {
     font-size: 1.5rem !important;
   }
 }
 
-@media (min-width:960px) { 
+@media (min-width: 960px) {
+  .header {
+    padding-top: 10%;
+  }
   .icons {
-    font-size:2.5rem !important;
+    font-size: 2.5rem !important;
   }
-  .projects-screenshots-rescyoume {
-    margin: 0 -8rem 0 -8rem;
+  .right-side,
+  .labels,
+  .project-title {
+    font-size: 1rem !important;
   }
-  .right-side, .labels, .project-title {font-size:1rem !important;} 
-  .left-side{font-size:4rem;}
-} 
-
-@media (min-width:1100px) { 
-  .icons {
-    font-size:3rem !important;
-  } 
-  .projects-screenshots-rescyoume {
-    margin: 0 -12rem 0 -12rem;
-  }
-  .right-side, .labels, .project-title {
-    font-size:1.25rem !important;
-  } 
   .left-side {
-    font-size:5rem;
+    font-size: 4rem;
   }
-} 
+}
 
-
+@media (min-width: 1100px) {
+  .icons {
+    font-size: 3rem !important;
+  }
+  .right-side,
+  .labels,
+  .project-title {
+    font-size: 1.25rem !important;
+  }
+  .left-side {
+    font-size: 5rem;
+  }
+}
 
 .left-side {
-  // padding-left: 10%;
-  // padding-right: 10%;
-  // font-weight: bold;
-  font-size:3rem;
+  font-size: 3rem;
   height: 100vh;
-  /* position: relative; */
 }
-/*New*/
-// .left-side#main {
-//   position: -webkit-sticky;
-//   position: sticky;
-//   top: 0;
-// }
-/**/
-.right-side{
+
+.right-side {
   position: relative;
 }
 
 .content {
   padding: 10%;
-  line-height:2.0;
+  line-height: 2;
   font-weight: bold;
   animation-name: appearSlowly;
   animation-duration: 3s;
   text-align: justify;
 }
 
-
-
-
-.header{
+.header {
   animation-name: moveToRight;
-  padding-top: 10%;
   animation-duration: 1.5s;
   animation-timing-function: ease-in;
 }
 
-@keyframes moveToRight{
-  0%{
+@keyframes moveToRight {
+  0% {
     opacity: 0;
-    transform: translateX(-100px)
+    transform: translateX(-100px);
   }
 
-  80%{
-    transform:translateX(10px)
+  80% {
+    transform: translateX(10px);
   }
 
-  100%{
+  100% {
     opacity: 1;
     transform: translate(0);
   }
 }
 
-@keyframes moveToLeft{
-  0%{
+@keyframes moveToLeft {
+  0% {
     opacity: 0;
-    transform: translateX(100px)
+    transform: translateX(100px);
   }
 
-  80%{
-    transform:translateX(-10px)
+  80% {
+    transform: translateX(-10px);
   }
 
-  100%{
+  100% {
     opacity: 1;
     transform: translate(0);
   }
 }
 
-@keyframes appearSlowly{
-  0%{
-    opacity:0;
+@keyframes appearSlowly {
+  0% {
+    opacity: 0;
   }
-  100%{
-    opacity:1;
-  }
-}
-
-@keyframes appearFromBottom{
-  0%{
-    transform:translateY(30px);
-  }
-  100%{
-    transform:translateY(0px);
+  100% {
+    opacity: 1;
   }
 }
 
-.icons-container{
-  margin-right:20px;
+@keyframes appearFromBottom {
+  0% {
+    transform: translateY(30px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.icons-container {
+  margin-right: 20px;
   bottom: 30px;
   position: absolute;
 }
 
-.icons{
+.icons {
   animation-name: appearFromBottom;
   animation-duration: 1.5s;
 }
 
-.icons:hover{
-  transform: scale(1.2)
+.icons:hover {
+  transform: scale(1.2);
 }
-.icons:active{
-  transform: scale(1)
-}
-
-#linkedin{
-  color: #2867B2;
+.icons:active {
+  transform: scale(1);
 }
 
-#github{
-  color:black;
+#linkedin {
+  color: #2867b2;
 }
 
-#mail{
-  color: #D44638;
+#github {
+  color: black;
 }
 
-#codewars{
-  color:black;
+#mail {
+  color: #d44638;
 }
 
-.labels{
+#codewars {
+  color: black;
+}
+
+.labels {
   font-weight: bold;
 }
 
-.toolbar-container{
-  position: relative;
+.toolbar-container {
   align-content: center;
-  position: absolute;
-  bottom: 20px;
-  padding-left: 9%;
   animation-name: moveToLeft;
   animation-duration: 1.5s;
   animation-timing-function: ease-in;
 }
 
-
 /* Media Queries: Tablet Landscape */
 @media screen and (max-width: 1060px) {
-  #primary { width:67%; }
-  #secondary { width:30%; margin-left:3%;}  
+  #primary {
+    width: 67%;
+  }
+  #secondary {
+    width: 30%;
+    margin-left: 3%;
+  }
 }
 
 /* Media Queries: Tabled Portrait */
 @media screen and (max-width: 480px) {
-  #primary { width:100%; }
-  #secondary { width:100%; margin:0; border:none; }
+  #primary {
+    width: 100%;
+  }
+  #secondary {
+    width: 100%;
+    margin: 0;
+    border: none;
+  }
 }
 
 /*ensure that your images will never be bigger than their parent container*/
-img { max-width: 100%; height: auto; }
-
-
-
+img {
+  max-width: 100%;
+  height: auto;
+}
