@@ -30,9 +30,9 @@ export default function AboutRight(props) {
         <div className="paragraph">
           I am passionate about design and minimalism, because truly believe that less is more.
         </div>
-        <h1 className="paragraph">
-          <i>Technologies I use</i>
-        </h1>
+        <h2 className="paragraph">
+          Technologies I use
+        </h2>
         {tags.map((tech) => (
           <div className="tech-tag">{tech}</div>
         ))}
