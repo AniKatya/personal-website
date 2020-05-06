@@ -10,7 +10,7 @@
         "presentation": "I've created several projects by myself and with my friends during Hackathons.",
         "CRM": "A MERN stack based Customer Relationship Management tool. Used Recharts for graphic analytics dashboard and Material UI for design.",
         "RESCYOUME": "RescYouMe is an application created for you to feel safer wherever you go. Built using Google Maps API, Web-push npm package, MERN, Material UI, MobX.",
-        "WeatherNow": "Full-stack MVC weather app. Shows the weather for the user's current location. Build using JavaScript, jQuery and Handlebars on frontend; Node.js, Express, MongoDB on backend.  Materialize design."
+        "WeatherNow": "Full-stack MVC weather app. Shows the weather for the user's current location. Built using JavaScript, jQuery and Handlebars on frontend; Node.js, Express, MongoDB on backend.  Materialize design."
     },
     "contact": {
         "presentation": "If you are looking for responsible and hard-working junior web-developer and a nice person to work with – you are very welcome to contact me."

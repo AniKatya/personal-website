@@ -1,5 +1,6 @@
 * {
   font-family: "Montserrat";
+  overflow-x: hidden;
 }
 
 /*leftSide*/
@@ -9,40 +10,39 @@
   padding-right: 10%;
   font-weight: bold;
 }
-/**/
-@media (min-width: 0px) {
-  .header {
-    font-size: 4rem;
-    padding-top: 30%;
-    padding-left: 15%;
-  }
-  .right-side {
-    min-height: 100vh;
-    z-index: 0;
-  }
-  .icons {
-    font-size: 2.75rem !important;
-  }
-  .left-side,
-  .right-side {
-    min-height: 100vh;
-    width: 100vw;
-  }
-  .toolbar-container {
-    font-size: 3rem !important;
-    padding-left: 15%;
-    position: absolute;
-    bottom: 30px;
-  }
-  .right-side,
-  .labels,
-  .project-title {
-    font-size: 1.25rem !important;
-  }
+
+.header {
+  font-size: 4rem;
+  padding-top: 30%;
+  padding-left: 15%;
+}
+.right-side {
+  min-height: 100vh;
+  z-index: 0;
+}
+.icons {
+  font-size: 2.75rem !important;
+}
+.left-side,
+.right-side {
+  min-height: 100vh;
+  width: 100vw;
+}
+.toolbar-container {
+  font-size: 3rem !important;
+  padding-left: 15%;
+  position: absolute;
+  bottom: 30px;
+}
+.right-side,
+.labels,
+.project-title {
+  font-size: 1.25rem !important;
 }
 
 @media (min-width: 600px) {
-  .header, .toolbar-container {
+  .header,
+  .toolbar-container {
     padding-left: 10%;
   }
   .main-container {
@@ -224,28 +224,6 @@
   animation-timing-function: ease-in;
 }
 
-/* Media Queries: Tablet Landscape */
-@media screen and (max-width: 1060px) {
-  #primary {
-    width: 67%;
-  }
-  #secondary {
-    width: 30%;
-    margin-left: 3%;
-  }
-}
-
-/* Media Queries: Tabled Portrait */
-@media screen and (max-width: 480px) {
-  #primary {
-    width: 100%;
-  }
-  #secondary {
-    width: 100%;
-    margin: 0;
-    border: none;
-  }
-}
 
 /*ensure that your images will never be bigger than their parent container*/
 img {

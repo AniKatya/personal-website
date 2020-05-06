@@ -10,7 +10,7 @@ export default function ContactRight(props) {
     <div className="contact-right right-side">
       <div className="content" style={{color: props.data.backgroundColor, backgroundColor: props.data.color }}>
         <div>
-          If you are looking for responsible and hard-working junior web-developer and a nice person
+          If you are looking for responsible and hard-working developer and a nice person
           to work with – you are very welcome to contact me.
         </div>
         <Grid className="icons-container" container>
