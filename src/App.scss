@@ -1,6 +1,5 @@
 * {
   font-family: "Montserrat";
-  overflow-x: hidden;
 }
 
 /*leftSide*/
@@ -10,7 +9,7 @@
   padding-right: 10%;
   font-weight: bold;
 }
-
+/**/
 .header {
   font-size: 4rem;
   padding-top: 30%;
@@ -112,6 +111,7 @@
 
 .right-side {
   position: relative;
+  overflow-x: hidden;
 }
 
 .content {
@@ -223,7 +223,6 @@
   animation-duration: 1.5s;
   animation-timing-function: ease-in;
 }
-
 
 /*ensure that your images will never be bigger than their parent container*/
 img {
