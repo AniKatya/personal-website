@@ -8,8 +8,7 @@ import crm3 from "../../crm3.png";
 import resc from "../../resc.png";
 import Weather from "../../Weather.png";
 
-import "./ProjectsRight.scss"
-let json = require("../../aboutMe.json");
+import "./ProjectsRight.scss";
 
 class Projects extends Component {
   render() {
@@ -19,8 +18,10 @@ class Projects extends Component {
           className="content"
           style={{ color: this.props.data.backgroundColor, backgroundColor: this.props.data.color }}
         >
+          I've created several projects by myself and with my friends during Hackathons.
           <div className="screenshots-container">
-          <Button
+            <br></br>
+            <Button
               className="project-title weather-title"
               onClick={this.props.addWeatherInfoDiv}
               endIcon={<ArrowDropDownIcon> </ArrowDropDownIcon>}
@@ -28,10 +29,14 @@ class Projects extends Component {
               WeatherNow
             </Button>
             {this.props.WeatherNow ? (
-              <div className="project-info">{json.projects.WeatherNow}</div>
+              <div className="project-info">
+                Full-stack MVC weather app. Shows the weather for the user's current location. Built
+                using JavaScript, jQuery and Handlebars on frontend; Node.js, Express, MongoDB on
+                backend. Materialize design.
+              </div>
             ) : null}
             <a href="https://my-weather-now-app.herokuapp.com/">
-                <img className="projects-screenshots-weather" src={Weather} alt=""></img>
+              <img className="projects-screenshots-weather" src={Weather} alt=""></img>
             </a>
 
             <Button
@@ -41,7 +46,12 @@ class Projects extends Component {
             >
               CRM
             </Button>
-            {this.props.CRM ? <div className="project-info">{json.projects.CRM}</div> : null}
+            {this.props.CRM ? (
+              <div className="project-info">
+                A MERN stack based Customer Relationship Management tool. Used Recharts for graphic
+                analytics dashboard and Material UI for design.{" "}
+              </div>
+            ) : null}
             <a href="https://customer-management-tool.herokuapp.com/">
               <div className="crm-screenshots-container">
                 <img className="projects-screenshots" src={crm1} alt=""></img>
@@ -58,12 +68,14 @@ class Projects extends Component {
               RESCYOUME
             </Button>
             {this.props.RESCYOUME ? (
-              <div className="project-info">{json.projects.RESCYOUME}</div>
+              <div className="project-info">
+                RescYouMe is an application created for you to feel safer wherever you go. Built
+                using Google Maps API, Web-push npm package, MERN, Material UI, MobX.{" "}
+              </div>
             ) : null}
             <a href="https://resc-you-me.herokuapp.com/">
-                <img className="projects-screenshots-rescyoume" src={resc} alt=""></img>
+              <img className="projects-screenshots-rescyoume" src={resc} alt=""></img>
             </a>
-    
           </div>
         </div>
       </div>

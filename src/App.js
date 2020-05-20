@@ -6,36 +6,29 @@ import AboutRight from "./components/About/AboutRight.js";
 import ProjectsRight from "./components/Projects/ProjectsRight.js";
 import ContactRight from "./components/Contact/ContactRight.js";
 import LeftSide from "./components/LeftSide/LeftSide.js";
-let json = require("./aboutMe.json");
 
 class App extends Component {
-  constructor() {
-    super();
-    this.state = {
+  state = {
       main: {
         header: "Shalom!_I am Katya.",
         backgroundColor: "#C9A3B4",
         color: "white",
         pic: pic,
-        paragraph1: json.welcome.presentation,
       },
 
       projects: {
         header: "My Projects",
         backgroundColor: "white",
         color: "#91C1B9",
-        paragraph1: json.projects.presentation,
       },
       contact: {
         header: "Contact",
         backgroundColor: "#8394AD",
         color: "white",
-        paragraph1: json.contact.presentation,
         fullName: "Katya Lopukhina",
         location: "Israel",
       },
     };
-  }
 
   render() {
     return (
@@ -57,3 +50,6 @@ class App extends Component {
   }
 }
 export default App;
+
+
+

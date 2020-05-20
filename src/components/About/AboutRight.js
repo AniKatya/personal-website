@@ -19,7 +19,7 @@ export default function AboutRight(props) {
   ];
   return (
     <div className="right-side">
-      <div className="content" style={{color: props.data.backgroundColor}}>
+      <div className="content" style={{ color: props.data.backgroundColor }}>
         <div className="paragraph">I am Full Stack Developer from Russia based in Israel.</div>
         <img src={myPic} alt="" className="pic"></img>
         <br></br>
@@ -30,9 +30,7 @@ export default function AboutRight(props) {
         <div className="paragraph">
           I am passionate about design and minimalism, because truly believe that less is more.
         </div>
-        <h2 className="paragraph">
-          Technologies I use
-        </h2>
+        <h2 className="paragraph">Technologies I use</h2>
         {tags.map((tech) => (
           <div className="tech-tag">{tech}</div>
         ))}
