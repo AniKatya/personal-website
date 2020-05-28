@@ -1,28 +1,35 @@
-const initialState = {
-  CRM: false,
-  RESCYOUME: false,
-  WeatherNow: false,
+import { combineReducers } from "redux";
+
+import crmPic from "../crm.png";
+import rescPic from "../resc.png";
+import weatherPic from "../weather.png";
+
+const projectsReducer = () => {
+  return [
+    {
+      title: "WeatherNow",
+      screenshot: weatherPic,
+      link: "https://my-weather-now-app.herokuapp.com/",
+    },
+    {
+      title: "CRM",
+      screenshot: crmPic,
+    },
+    {
+      title: "RESCYOUME",
+      screenshot: rescPic,
+    },
+  ];
 };
 
-const reducer = (state = initialState, action) => {
-  switch (action.type) {
-    case "addCrmInfo":
-      return {
-        ...state,
-        CRM: !state.CRM,
-      };
-    case "addRescInfo":
-      return {
-        ...state,
-        RESCYOUME: !state.RESCYOUME,
-      };
-    case "addWeatherInfo":
-      return {
-        ...state,
-        WeatherNow: !state.WeatherNow,
-      };
+const selectedProjectReducer = (selectedProject = "", action) => {
+  if (action.type === "PROJECT_SELECTED") {
+    return { title: action.payload.project, info: action.payload.projectInfo };
   }
-  return state;
+  return selectedProject;
 };
 
-export default reducer;
+export default combineReducers({
+  projects: projectsReducer,
+  selectedProject: selectedProjectReducer,
+});
