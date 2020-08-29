@@ -22,7 +22,6 @@ class Projects extends Component {
   }
 }
 
-//it means this.props === {songs: state.songs}
 const mapStateToProps = (state) => {
   return {
     projects: state.projects,

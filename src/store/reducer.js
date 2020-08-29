@@ -24,7 +24,7 @@ const projectsReducer = () => {
 
 const selectedProjectReducer = (selectedProject = "", action) => {
   if (action.type === "PROJECT_SELECTED") {
-    return { title: action.payload.project, info: action.payload.projectInfo };
+    return { title: action.payload.project, info: action.payload.projectInfo, toShowInfo: action.payload.toShowInfo };
   }
   return selectedProject;
 };
