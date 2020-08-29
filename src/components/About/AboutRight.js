@@ -1,5 +1,5 @@
 import React from "react";
-import myPic from "../../me.jpg";
+import myPic from "../../images/me.jpg";
 import "./AboutRight.scss";
 
 export default function AboutRight(props) {

@@ -1,8 +1,8 @@
 import { combineReducers } from "redux";
 
-import crmPic from "../crm.png";
-import rescPic from "../resc.png";
-import weatherPic from "../weather.png";
+import crmPic from "../images/crm.png";
+import rescPic from "../images/resc.png";
+import weatherPic from "../images/Weather.png";
 
 const projectsReducer = () => {
   return [

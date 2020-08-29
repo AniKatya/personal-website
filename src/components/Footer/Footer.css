@@ -1,0 +1,11 @@
+.footer-container {
+    background-color: #f5f6fa;
+    text-align: center;
+}
+
+#footer-text{
+    font-size: 90%;
+    padding-top: 0.5%;
+    text-align: center;
+    color: #EE5684;
+}

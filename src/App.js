@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import "./App.scss";
 
-import pic from "./me.jpg";
+import pic from "../src/images/me.jpg";
 import AboutRight from "./components/About/AboutRight.js";
 import ProjectsRight from "./components/Projects/ProjectsRight.js";
 import ContactRight from "./components/Contact/ContactRight.js";
 import LeftSide from "./components/LeftSide/LeftSide.js";
+import Footer from "./components/Footer/Footer";
 
 class App extends Component {
   state = {
@@ -45,6 +46,7 @@ class App extends Component {
           <LeftSide data={this.state.contact} />
           <ContactRight className="right-side" data={this.state.contact}/>
         </div>
+        <Footer />
       </div>
     );
   }

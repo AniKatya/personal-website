@@ -1,7 +1,9 @@
 * {
   font-family: "Montserrat";
 }
-
+body {
+  margin: 0px;
+}
 /*leftSide*/
 .header {
   justify-content: center;
@@ -111,7 +113,6 @@
 
 .right-side {
   position: relative;
-  overflow-x: hidden;
 }
 
 .content {
